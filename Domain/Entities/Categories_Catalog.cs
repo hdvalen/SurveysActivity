@@ -1,4 +1,6 @@
-public class CategoriesCatalog
+using Domain.entities;
+
+public class CategoriesCatalog : BaseEntity
 {
     public int Id { get; set; }
     public DateTime Created_At { get; set; }

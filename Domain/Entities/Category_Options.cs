@@ -1,4 +1,6 @@
-public class CategoryOptions
+using Domain.entities;
+
+public class CategoryOptions : BaseEntity
 {
     public int Id { get; set; }
     public int CatalogOptions_Id { get; set; }

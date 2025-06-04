@@ -1,4 +1,6 @@
-public class Chapter
+using Domain.entities;
+
+public class Chapter : BaseEntity
 {
     public int Id { get; set; }
     public int Survey_Id { get; set; }

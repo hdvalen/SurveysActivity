@@ -1,4 +1,6 @@
-public class Question
+using Domain.entities;
+
+public class Question : BaseEntity
 {
     public int Id { get; set; }
     public int ChapterId { get; set; }

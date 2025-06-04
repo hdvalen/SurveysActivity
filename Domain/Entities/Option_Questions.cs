@@ -1,4 +1,6 @@
-public class OptionQuestion
+using Domain.entities;
+
+public class OptionQuestion : BaseEntity
 {
     public int Id { get; set; }
     public int Option_Id { get; set; }

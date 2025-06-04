@@ -1,4 +1,6 @@
-public class OptionsResponse
+using Domain.entities;
+
+public class OptionsResponse : BaseEntity
 {
     public long Id { get; set; }
     public long OptionQuestionId { get; set; }

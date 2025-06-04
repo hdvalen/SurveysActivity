@@ -1,4 +1,6 @@
-public class SubQuestion
+using Domain.entities;
+
+public class SubQuestion : BaseEntity
 {
     public int Id { get; set; }
     public DateTime Created_At { get; set; }
