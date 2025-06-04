@@ -17,10 +17,10 @@ namespace Infrastructure.Configuration
                 .HasColumnName("id");
 
             builder.Property(c => c.Created_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
                 
             builder.Property(c => c.Updated_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
         }
     }
 }

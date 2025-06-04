@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/camper/Música/SurveysActivity/Domain/Domain.csproj": {}
+    "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "/home/camper/Música/SurveysActivity/Domain/Domain.csproj": {
+    "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
-        "packagesPath": "/home/camper/.nuget/packages/",
-        "outputPath": "/home/camper/Música/SurveysActivity/Domain/obj/",
+        "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ususario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/camper/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ususario\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -57,11 +57,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.16, 8.0.16]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.16, 8.0.16]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.16, 8.0.16]"
             }
           ],
           "frameworkReferences": {
@@ -69,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

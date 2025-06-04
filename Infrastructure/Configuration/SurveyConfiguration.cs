@@ -17,10 +17,10 @@ namespace Infrastructure.Configuration
                 .HasColumnName("id");
 
             builder.Property(s => s.Created_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
 
             builder.Property(s => s.Updated_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
 
             builder.Property(s => s.ComponentHtml)
                 .HasMaxLength(20)

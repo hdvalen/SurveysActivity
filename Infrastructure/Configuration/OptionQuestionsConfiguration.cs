@@ -17,10 +17,10 @@ namespace Infrastructure.Configuration
                 .HasColumnName("id");
 
             builder.Property(o => o.Created_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
 
             builder.Property(o => o.Updated_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
 
             builder.Property(o => o.CommentOptiones)
                 .HasColumnName("comment_options")

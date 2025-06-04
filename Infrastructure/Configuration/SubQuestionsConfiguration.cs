@@ -16,10 +16,10 @@ namespace Infrastructure.Configuration
                 .HasColumnName("id");
 
             builder.Property(sq => sq.Created_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
 
             builder.Property(sq => sq.Updated_At)
-                .HasDefaultValue(DateTime.UtcNow);
+                .HasDefaultValueSql("now()");
 
             builder.Property(sq => sq.SubquestionNumber)
                 .HasColumnName("subquestion_number");

@@ -16,9 +16,9 @@ namespace Infrastructure.Configuration
                 .IsRequired()
                 .HasColumnName("id");
 
-            builder.Property(c => c.Created_At).HasDefaultValue(DateTime.UtcNow);
+            builder.Property(c => c.Created_At).HasDefaultValueSql("now()");
 
-            builder.Property(c => c.Updated_At).HasDefaultValue(DateTime.UtcNow);
+            builder.Property(c => c.Updated_At).HasDefaultValueSql("now()");
 
             builder.Property(c => c.ComponentHtml)
                 .HasColumnName("componenthtml")
