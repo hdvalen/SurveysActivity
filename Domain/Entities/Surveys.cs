@@ -1,4 +1,6 @@
-public class Survey
+using Domain.entities;
+
+public class Survey : BaseEntity
 {
     public int Id { get; set; }
     public DateTime Created_At { get; set; }

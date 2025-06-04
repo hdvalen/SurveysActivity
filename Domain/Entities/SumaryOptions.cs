@@ -1,4 +1,6 @@
-public class SummaryOptions
+using Domain.entities;
+
+public class SummaryOptions : BaseEntity
 {
     public int Id { get; set; }
     public int Survey_Id { get; set; }
