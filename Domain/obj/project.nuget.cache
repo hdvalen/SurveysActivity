@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OXA0iH/uM4Y=",
+  "dgSpecHash": "HVzI4rdeSPo=",
   "success": true,
-  "projectFilePath": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
+  "projectFilePath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "/home/camper/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
-    "/home/camper/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }

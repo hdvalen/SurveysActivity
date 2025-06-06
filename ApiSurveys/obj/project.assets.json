@@ -3506,19 +3506,19 @@
     ]
   },
   "packageFolders": {
-    "/home/camper/.nuget/packages/": {}
+    "C:\\Users\\ususario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
+      "projectUniqueName": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\ApiSurveys.csproj",
       "projectName": "ApiSurveys",
-      "projectPath": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
-      "packagesPath": "/home/camper/.nuget/packages/",
-      "outputPath": "/home/camper/Música/SurveysActivity/ApiSurveys/obj/",
+      "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\ApiSurveys.csproj",
+      "packagesPath": "C:\\Users\\ususario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/camper/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ususario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3530,11 +3530,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/camper/Música/SurveysActivity/Application/Application.csproj": {
-              "projectPath": "/home/camper/Música/SurveysActivity/Application/Application.csproj"
+            "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Application\\Application.csproj"
             },
-            "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj"
+            "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -3549,7 +3549,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -3584,15 +3584,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.15, 8.0.15]"
+            "version": "[8.0.16, 8.0.16]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[8.0.15, 8.0.15]"
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.16, 8.0.16]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.15, 8.0.15]"
+            "version": "[8.0.16, 8.0.16]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.16, 8.0.16]"
           }
         ],
         "frameworkReferences": {
@@ -3603,7 +3607,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
