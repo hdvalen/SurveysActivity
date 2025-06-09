@@ -1,8 +1,12 @@
+using System.Reflection;
 using ApiSurveys.Extensions;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Automapper:  **objeto simple de datos** que se utiliza para **transportar información entre capas** 
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 
 // Add services to the container.
 builder.Services.ConfigureCors();

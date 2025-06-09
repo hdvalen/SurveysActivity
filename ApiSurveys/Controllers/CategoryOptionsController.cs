@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Application.Interfaces;
+using Application.DTOs;
+using AutoMapper;
 using Domain.entities;
 
 namespace ApiSurveys.Controllers;
@@ -7,74 +9,65 @@ namespace ApiSurveys.Controllers;
 public class CategoryOptionsController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
-    public CategoryOptionsController(IUnitOfWork unitOfWork)
+    private readonly IMapper _mapper;
+    public CategoryOptionsController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<IEnumerable<CategoryOptions>>>
+    public async Task<ActionResult<IEnumerable<CategoryOptionDto>>>
      Get()
     {
         var categoryOptions = await _unitOfWork.CategoryOptions.GetAllAsync();
-        return Ok(categoryOptions);
+        return _mapper.Map<List<CategoryOptionDto>>(categoryOptions);
     }
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<CategoryOptions>>
+    public async Task<ActionResult<CategoryOptionDto>>
     Get(int id)
     {
         var categoryOption = await _unitOfWork.CategoryOptions.GetByIdAsync(id);
         if (categoryOption == null)
             return NotFound($"Category Options with id {id} was not found");
-        return Ok(categoryOption);
+        return _mapper.Map<CategoryOptionDto>(categoryOption);
     }
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<CategoryOptions>> Post(CategoryOptions categoryOptions)
+    public async Task<ActionResult<CategoryOptions>> Post(CategoryOptionDto categoryOptionsDto)
     {
-        _unitOfWork.CategoryOptions.Add(categoryOptions);
+        var CategoryOptions = _mapper.Map<CategoryOptions>(categoryOptionsDto);
+        _unitOfWork.CategoryOptions.Add(CategoryOptions);
         await _unitOfWork.SaveAsync();
-         if (categoryOptions == null)
+         if (categoryOptionsDto == null)
         {
             return BadRequest();
         }
-        return CreatedAtAction(nameof(Post), new { id = categoryOptions.Id }, categoryOptions);
+        return CreatedAtAction(nameof(Post), new { id = categoryOptionsDto.Id }, categoryOptionsDto);
     }
 
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> Put(int id, [FromBody] CategoryOptions categoryOptions)
+    public async Task<IActionResult> Put(int id, [FromBody] CategoryOptionDto categoryOptionsDto)
     {
-        if (categoryOptions == null)
+        if (categoryOptionsDto == null)
             return BadRequest("El cuerpo de la solicitud esta vacio.");
 
-        if (id != categoryOptions.Id)
-            return BadRequest("El Id de la URL no coincide con el del objeto enviado.");
+        var CategoryOptions = _mapper.Map<CategoryOptions>(categoryOptionsDto);
 
-        var existingCategoryOption = await
-         _unitOfWork.CategoryOptions.GetByIdAsync(id);
-        if (existingCategoryOption == null)
-            return NotFound($"No se encontro category option con id {id}");
-
-        // Actualiza las propiedades necesarias
-        existingCategoryOption.CatalogOptions_Id = categoryOptions.CatalogOptions_Id;
-        existingCategoryOption.CategoriesOptions_Id = categoryOptions.CategoriesOptions_Id;
-        existingCategoryOption.Updated_At = DateTime.UtcNow;
-        // ...otros campos...
-
-        _unitOfWork.CategoryOptions.Update(existingCategoryOption);
+        _unitOfWork.CategoryOptions.Update(CategoryOptions);
         await _unitOfWork.SaveAsync();
 
-        return Ok(existingCategoryOption);
+        return Ok(categoryOptionsDto);
     }
 
     [HttpDelete("{id}")]

@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/14.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1149,6 +1165,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/14.0.0": {
+      "sha512": "OC+1neAPM4oCCqQj3g2GJ2shziNNhOkxmNB9cVS8jtx4JbgmRzLcUOxB9Tsz6cVPHugdkHgCaCrTjjSI0Z5sCQ==",
+      "type": "package",
+      "path": "automapper/14.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.14.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net8.0/AutoMapper.dll",
+        "lib/net8.0/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -3499,6 +3530,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Application >= 1.0.0",
+      "AutoMapper >= 14.0.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
@@ -3506,19 +3538,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ususario\\.nuget\\packages\\": {}
+    "/home/camper/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\ApiSurveys.csproj",
+      "projectUniqueName": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
       "projectName": "ApiSurveys",
-      "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\ApiSurveys.csproj",
-      "packagesPath": "C:\\Users\\ususario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\obj\\",
+      "projectPath": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
+      "packagesPath": "/home/camper/.nuget/packages/",
+      "outputPath": "/home/camper/Música/SurveysActivity/ApiSurveys/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ususario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/camper/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3530,11 +3562,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Application\\Application.csproj"
+            "/home/camper/Música/SurveysActivity/Application/Application.csproj": {
+              "projectPath": "/home/camper/Música/SurveysActivity/Application/Application.csproj"
             },
-            "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\Infrastructure\\Infrastructure.csproj"
+            "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj": {
+              "projectPath": "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj"
             }
           }
         }
@@ -3549,12 +3581,16 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[14.0.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.15, )"
@@ -3584,19 +3620,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
+            "version": "[8.0.15, 8.0.15]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.16, 8.0.16]"
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.15, 8.0.15]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.16, 8.0.16]"
+            "version": "[8.0.15, 8.0.15]"
           }
         ],
         "frameworkReferences": {
@@ -3607,7 +3639,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

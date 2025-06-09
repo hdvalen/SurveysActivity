@@ -1,6 +1,7 @@
 
 using Application.Interfaces;
 using Domain.entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {
@@ -12,5 +13,11 @@ namespace Infrastructure.Repositories
         {
             _context = context;
         }
+         public override async Task<CategoriesCatalog> GetByIdAsync(int id)
+        {
+            return await _context.CategoriesCatalog
+                .FirstOrDefaultAsync(p => p.Id == id) ?? throw new KeyNotFoundException($"Player with id {id} was not found.");
+        }
     }
+   
 }
