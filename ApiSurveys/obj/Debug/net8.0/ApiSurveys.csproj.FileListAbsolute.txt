@@ -429,3 +429,4 @@ C:\Users\ususario\Documents\Valentina\campusland\EntityFramework\surveys\apisurv
 C:\Users\ususario\Documents\Valentina\campusland\EntityFramework\surveys\apisurveys\obj\Debug\net8.0\ApiSurveys.pdb
 C:\Users\ususario\Documents\Valentina\campusland\EntityFramework\surveys\apisurveys\obj\Debug\net8.0\ApiSurveys.genruntimeconfig.cache
 C:\Users\ususario\Documents\Valentina\campusland\EntityFramework\surveys\apisurveys\obj\Debug\net8.0\ref\ApiSurveys.dll
+C:\Users\ususario\Documents\Valentina\campusland\EntityFramework\surveys\ApiSurveys\bin\Debug\net8.0\AutoMapper.dll

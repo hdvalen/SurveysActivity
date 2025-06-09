@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ssZ1vnmPIRw=",
+  "dgSpecHash": "dzg1EPUrPRs=",
   "success": true,
   "projectFilePath": "C:\\Users\\ususario\\Documents\\Valentina\\campusland\\EntityFramework\\surveys\\ApiSurveys\\ApiSurveys.csproj",
   "expectedPackageFiles": [
@@ -32,16 +32,16 @@
     "C:\\Users\\ususario\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.3\\microsoft.extensions.logging.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\microsoft.extensions.options\\9.0.3\\microsoft.extensions.options.9.0.3.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\mysqlconnector\\2.4.0\\mysqlconnector.2.4.0.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\npgsql\\9.0.2\\npgsql.9.0.2.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.3\\npgsql.entityframeworkcore.postgresql.9.0.3.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\9.0.0-preview.3.efcore.9.0.0\\pomelo.entityframeworkcore.mysql.9.0.0-preview.3.efcore.9.0.0.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.6.2\\swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore\\8.1.4\\swashbuckle.aspnetcore.8.1.4.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\8.1.4\\swashbuckle.aspnetcore.swagger.8.1.4.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\8.1.4\\swashbuckle.aspnetcore.swaggergen.8.1.4.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\8.1.4\\swashbuckle.aspnetcore.swaggerui.8.1.4.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",
@@ -57,10 +57,10 @@
     "C:\\Users\\ususario\\.nuget\\packages\\system.text.encodings.web\\9.0.3\\system.text.encodings.web.9.0.3.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\system.text.json\\9.0.3\\system.text.json.9.0.3.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512",
     "C:\\Users\\ususario\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.16\\microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512",
-    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.16\\microsoft.netcore.app.host.win-x64.8.0.16.nupkg.sha512"
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.16\\microsoft.netcore.app.host.win-x64.8.0.16.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.16\\microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
+    "C:\\Users\\ususario\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.16\\microsoft.windowsdesktop.app.ref.8.0.16.nupkg.sha512"
   ],
   "logs": []
 }
