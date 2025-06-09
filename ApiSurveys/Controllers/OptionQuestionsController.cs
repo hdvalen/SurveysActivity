@@ -1,81 +1,71 @@
 using Microsoft.AspNetCore.Mvc;
 using Application.Interfaces;
-
+using Application.DTOs;
+using AutoMapper;
 
 namespace ApiSurveys.Controllers;
 
 public class OptionQuestionsController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
+    private readonly IMapper _mapper;
 
-    public OptionQuestionsController(IUnitOfWork unitOfWork)
+    public OptionQuestionsController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
+        _mapper = mapper;
     }
 
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<ActionResult<IEnumerable<OptionQuestion>>> Get()
+    public async Task<ActionResult<IEnumerable<OptionsQuestionsDto>>> Get()
     {
         var optionQuestions = await _unitOfWork.OptionQuestion.GetAllAsync();
-        return Ok(optionQuestions);
+        return _mapper.Map<List<OptionsQuestionsDto>>(optionQuestions);
     }
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<OptionQuestion>> Get(int id)
+    public async Task<ActionResult<OptionsQuestionsDto>> Get(int id)
     {
         var optionQuestion = await _unitOfWork.OptionQuestion.GetByIdAsync(id);
         if (optionQuestion == null)
             return NotFound($"Option Question with id {id} was not found");
-        return Ok(optionQuestion);
+        return _mapper.Map<OptionsQuestionsDto>(optionQuestion);
     }
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-    public async Task<ActionResult<OptionQuestion>> Post(OptionQuestion optionQuestion)
+    public async Task<ActionResult<OptionQuestion>> Post(OptionsQuestionsDto optionQuestionDto)
     {
-        _unitOfWork.OptionQuestion.Add(optionQuestion);
+        var OptionQuestion = _mapper.Map<OptionQuestion>(optionQuestionDto);
+        _unitOfWork.OptionQuestion.Add(OptionQuestion);
         await _unitOfWork.SaveAsync();
-        if (optionQuestion == null)
+        if (optionQuestionDto == null)
         {
             return BadRequest();
         }
-        return CreatedAtAction(nameof(Post), new { id = optionQuestion.Id }, optionQuestion);
+        return CreatedAtAction(nameof(Post), new { id = optionQuestionDto.Id }, optionQuestionDto);
     }
 
     [HttpPut("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<IActionResult> Put(int id, [FromBody] OptionQuestion optionQuestion)
+    public async Task<IActionResult> Put(int id, [FromBody] OptionsQuestionsDto optionQuestionDto)
     {
-        if (optionQuestion == null)
+        if (optionQuestionDto == null)
             return BadRequest("El cuerpo de la solicitud está vacío.");
 
-        if (id != optionQuestion.Id)
-            return BadRequest("El Id de la URL no coincide con el del objeto enviado.");
-
-        var existingOptionQuestion = await
-            _unitOfWork.OptionQuestion.GetByIdAsync(id);
-        if (existingOptionQuestion == null)
-            return NotFound($"No se encontró la pregunta de opción con id {id}");
-
-        existingOptionQuestion.Option_Id = optionQuestion.Option_Id;
-        existingOptionQuestion.SubQuestion_Id = optionQuestion.SubQuestion_Id;
-        existingOptionQuestion.OptionCatalog_Id = optionQuestion.OptionCatalog_Id;
-        existingOptionQuestion.OptionQuestion_Id = optionQuestion.OptionQuestion_Id;
-        existingOptionQuestion.Updated_At = DateTime.UtcNow;
-        existingOptionQuestion.Created_At = DateTime.UtcNow;
-
-        _unitOfWork.OptionQuestion.Update(existingOptionQuestion);
+        var OptionQuestion = _mapper.Map<OptionQuestion>(optionQuestionDto);
+        _unitOfWork.OptionQuestion.Update(OptionQuestion);
         await _unitOfWork.SaveAsync();
 
-        return Ok(existingOptionQuestion);
+        return Ok(optionQuestionDto);
     }
 
     [HttpDelete("{id}")]
