@@ -13,7 +13,9 @@ builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 builder.Services.ConfigureCors();
 builder.Services.AddControllers();
 builder.Services.AddAplicacionServices();
+builder.Services.AddCustomRateLimiter();
 
+builder.Services.AddControllers();
 // Add services to the container.
 
 //builder.Services.AddOpenApi();
@@ -32,7 +34,7 @@ builder.Services.AddSwaggerGen(c =>
         Contact = new OpenApiContact
         {
             Name = "Grupo J1",
-            Email = "laura.vargasr@colpre.edu.co"
+            Email = "hodethcaballero@gmail.com"
         }
     });
 });
