@@ -11,6 +11,8 @@ public interface IUnitOfWork
     ISubQuestionsRepository SubQuestion { get; }
     ISumaryOptionRepository SummaryOptions { get; }
     ISurveyRepository Survey { get; }
+    IMemberRepository Member { get; }
+    IRolRepository Rol { get; }
     Task<int> SaveAsync();
 
 

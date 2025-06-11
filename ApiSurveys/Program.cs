@@ -66,5 +66,10 @@ if (app.Environment.IsDevelopment())
 app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
+app.UseRateLimiter();
+
+app.UseAuthorization();
+app.UseAuthentication();
+
 
 app.Run();
