@@ -1,8 +1,9 @@
 
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using Domain.entities;
 
-namespace Infrastructure
+namespace Infrastructure.Data
 {
     public class SurveyContext : DbContext
     {
@@ -19,6 +20,11 @@ namespace Infrastructure
         public DbSet<Chapter> Chapter { get; set; }
         public DbSet<CategoryOptions> CategoryOptions { get; set; }
         public DbSet<CategoriesCatalog> CategoriesCatalog { get; set; }
+        public DbSet<Member> Members { get; set; }
+        public DbSet<MemberRols> MemberRols { get; set; }
+        public DbSet<Rol> Rols { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<UserMember> UserMembers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

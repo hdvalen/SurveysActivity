@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.RateLimiting;
-using System.Threading.Tasks;
 using ApiSurveys.Helpers;
 using Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using ApiSurveys.Helpers.Errors;
 
 namespace ApiSurveys.Extensions;
 

@@ -18,6 +18,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     private ISurveyRepository? _survey;
     private IMemberRepository? _member;
     private IRolRepository? _rol;
+    private IMemberRolRepository? _memberRol;
     public UnitOfWork(SurveyContext context)
     {
         _context = context;
@@ -150,6 +151,17 @@ public class UnitOfWork : IUnitOfWork, IDisposable
                 _rol = new RolRepository (_context);
             }
             return _rol;
+        }
+    }
+    public IMemberRolRepository MemberRols
+    {
+        get
+        {
+            if (_memberRol == null)
+            {
+                _memberRol = new MemberRolRepository (_context);
+            }
+            return _memberRol;
         }
     }
     public async Task<int> SaveAsync()

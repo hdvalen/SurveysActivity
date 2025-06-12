@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
+      "projectUniqueName": "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
+      "projectPath": "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj",
       "packagesPath": "/home/camper/.nuget/packages/",
-      "outputPath": "/home/camper/Música/SurveysActivity/Domain/obj/",
+      "outputPath": "/home/camper/Vídeos/SurveysActivity/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/camper/.nuget/NuGet/NuGet.Config"

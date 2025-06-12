@@ -13,5 +13,5 @@ public class DataUserDto
     public string? Token { get; set; }
     [JsonIgnore]
     public string? RefreshToken { get; set; }
-    public DateTime RefreshTokeExpiration { get; set; }
+    public DateTime RefreshTokenExpiration { get; set; }
 }

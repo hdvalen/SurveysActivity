@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "13CWVFnbjWM=",
+  "dgSpecHash": "oXudz5wkr7Y=",
   "success": true,
-  "projectFilePath": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
+  "projectFilePath": "/home/camper/Vídeos/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
   "expectedPackageFiles": [
     "/home/camper/.nuget/packages/aspnetcoreratelimit/5.0.0/aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "/home/camper/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
@@ -67,9 +67,9 @@
     "/home/camper/.nuget/packages/system.text.encodings.web/9.0.3/system.text.encodings.web.9.0.3.nupkg.sha512",
     "/home/camper/.nuget/packages/system.text.json/9.0.3/system.text.json.9.0.3.nupkg.sha512",
     "/home/camper/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512",
+    "/home/camper/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
     "/home/camper/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512",
-    "/home/camper/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512",
-    "/home/camper/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512"
+    "/home/camper/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.15/microsoft.netcore.app.host.linux-x64.8.0.15.nupkg.sha512"
   ],
   "logs": []
 }

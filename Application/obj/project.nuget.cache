@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Laka+z9dZT4=",
+  "dgSpecHash": "EO2DeHW8nsw=",
   "success": true,
-  "projectFilePath": "/home/camper/Música/SurveysActivity/Application/Application.csproj",
+  "projectFilePath": "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj",
   "expectedPackageFiles": [
     "/home/camper/.nuget/packages/microsoft.netcore.app.ref/8.0.15/microsoft.netcore.app.ref.8.0.15.nupkg.sha512",
     "/home/camper/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.15/microsoft.aspnetcore.app.ref.8.0.15.nupkg.sha512"

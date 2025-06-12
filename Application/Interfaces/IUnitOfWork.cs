@@ -13,6 +13,7 @@ public interface IUnitOfWork
     ISurveyRepository Survey { get; }
     IMemberRepository Member { get; }
     IRolRepository Rol { get; }
+    IMemberRolRepository MemberRols { get; }
     Task<int> SaveAsync();
 
 

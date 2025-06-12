@@ -2,7 +2,7 @@ using Domain.entities;
 
 namespace Application.Interfaces;
 
-public interface IMemberRol : IGenericRepository<MemberRols>
+public interface IMemberRolRepository : IGenericRepository<MemberRols>
 {
     
 }
