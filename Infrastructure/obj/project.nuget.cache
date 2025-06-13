@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0wX1gpCe8o=",
+  "dgSpecHash": "UtWb7dOfNXk=",
   "success": true,
-  "projectFilePath": "/home/camper/Vídeos/SurveysActivity/Infrastructure/Infrastructure.csproj",
+  "projectFilePath": "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/camper/.nuget/packages/microsoft.entityframeworkcore/9.0.3/microsoft.entityframeworkcore.9.0.3.nupkg.sha512",
     "/home/camper/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.3/microsoft.entityframeworkcore.abstractions.9.0.3.nupkg.sha512",

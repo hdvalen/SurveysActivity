@@ -2,9 +2,9 @@ using Domain.entities;
 
 namespace Application.Interfaces;
 
-public interface IMemberRepository : IGenericRepository<Member>
+public interface IMemberRepository : IGenericRepository<UserMember>
 {
-    Task<Member> GetByUsernameAsync(string username);
-    Task<Member> GetByRefreshTokenAsync(string refreshToken);
+    Task<UserMember> GetByUsernameAsync(string username);
+    Task<UserMember> GetByRefreshTokenAsync(string refreshToken);
     
 }

@@ -2,7 +2,7 @@
 
 namespace Domain.entities
 {
-    public class Member : BaseEntity
+    public class UserMember : BaseEntity
     {
         public int Id { get; set; }
         public string? Name { get; set; }
@@ -12,5 +12,6 @@ namespace Domain.entities
         public string? Password { get; set; }
         public ICollection<RefreshToken> RefreshTokens { get; set; } = new HashSet<RefreshToken>();
         public ICollection<MemberRols> MemberRols { get; set; } = new HashSet<MemberRols>();
+        public ICollection<Rol> Roles { get; set; } = new HashSet<Rol>();
     }
 }

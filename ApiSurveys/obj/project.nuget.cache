@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oXudz5wkr7Y=",
+  "dgSpecHash": "13CWVFnbjWM=",
   "success": true,
-  "projectFilePath": "/home/camper/Vídeos/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
+  "projectFilePath": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
   "expectedPackageFiles": [
     "/home/camper/.nuget/packages/aspnetcoreratelimit/5.0.0/aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "/home/camper/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",

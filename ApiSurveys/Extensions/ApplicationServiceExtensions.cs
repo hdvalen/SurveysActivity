@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using ApiSurveys.Helpers.Errors;
+using Microsoft.AspNetCore.Identity;
+using AutoMapper.Execution;
+using Domain.entities;
 
 namespace ApiSurveys.Extensions;
 
@@ -22,6 +25,7 @@ public static class ApplicationServiceExtensions
 
     public static void AddAplicacionServices(this IServiceCollection services)
     {
+        services.AddScoped<IPasswordHasher<UserMember>, PasswordHasher<UserMember>>();
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
     }
     public static IServiceCollection AddCustomRateLimiter(this IServiceCollection services)

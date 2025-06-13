@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/camper/Vídeos/SurveysActivity/ApiSurveys/ApiSurveys.csproj": {}
+    "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj": {}
   },
   "projects": {
-    "/home/camper/Vídeos/SurveysActivity/ApiSurveys/ApiSurveys.csproj": {
+    "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/camper/Vídeos/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
+        "projectUniqueName": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
         "projectName": "ApiSurveys",
-        "projectPath": "/home/camper/Vídeos/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
+        "projectPath": "/home/camper/Música/SurveysActivity/ApiSurveys/ApiSurveys.csproj",
         "packagesPath": "/home/camper/.nuget/packages/",
-        "outputPath": "/home/camper/Vídeos/SurveysActivity/ApiSurveys/obj/",
+        "outputPath": "/home/camper/Música/SurveysActivity/ApiSurveys/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/camper/.nuget/NuGet/NuGet.Config"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj": {
-                "projectPath": "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj"
+              "/home/camper/Música/SurveysActivity/Application/Application.csproj": {
+                "projectPath": "/home/camper/Música/SurveysActivity/Application/Application.csproj"
               },
-              "/home/camper/Vídeos/SurveysActivity/Infrastructure/Infrastructure.csproj": {
-                "projectPath": "/home/camper/Vídeos/SurveysActivity/Infrastructure/Infrastructure.csproj"
+              "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj"
               }
             }
           }
@@ -119,14 +119,14 @@
         }
       }
     },
-    "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj": {
+    "/home/camper/Música/SurveysActivity/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj",
+        "projectUniqueName": "/home/camper/Música/SurveysActivity/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj",
+        "projectPath": "/home/camper/Música/SurveysActivity/Application/Application.csproj",
         "packagesPath": "/home/camper/.nuget/packages/",
-        "outputPath": "/home/camper/Vídeos/SurveysActivity/Application/obj/",
+        "outputPath": "/home/camper/Música/SurveysActivity/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/camper/.nuget/NuGet/NuGet.Config"
@@ -141,8 +141,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj": {
-                "projectPath": "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj"
+              "/home/camper/Música/SurveysActivity/Domain/Domain.csproj": {
+                "projectPath": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj"
               }
             }
           }
@@ -192,14 +192,14 @@
         }
       }
     },
-    "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj": {
+    "/home/camper/Música/SurveysActivity/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj",
+        "projectUniqueName": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj",
+        "projectPath": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj",
         "packagesPath": "/home/camper/.nuget/packages/",
-        "outputPath": "/home/camper/Vídeos/SurveysActivity/Domain/obj/",
+        "outputPath": "/home/camper/Música/SurveysActivity/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/camper/.nuget/NuGet/NuGet.Config"
@@ -261,14 +261,14 @@
         }
       }
     },
-    "/home/camper/Vídeos/SurveysActivity/Infrastructure/Infrastructure.csproj": {
+    "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/camper/Vídeos/SurveysActivity/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/home/camper/Vídeos/SurveysActivity/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/home/camper/Música/SurveysActivity/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/home/camper/.nuget/packages/",
-        "outputPath": "/home/camper/Vídeos/SurveysActivity/Infrastructure/obj/",
+        "outputPath": "/home/camper/Música/SurveysActivity/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/camper/.nuget/NuGet/NuGet.Config"
@@ -283,11 +283,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj": {
-                "projectPath": "/home/camper/Vídeos/SurveysActivity/Application/Application.csproj"
+              "/home/camper/Música/SurveysActivity/Application/Application.csproj": {
+                "projectPath": "/home/camper/Música/SurveysActivity/Application/Application.csproj"
               },
-              "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj": {
-                "projectPath": "/home/camper/Vídeos/SurveysActivity/Domain/Domain.csproj"
+              "/home/camper/Música/SurveysActivity/Domain/Domain.csproj": {
+                "projectPath": "/home/camper/Música/SurveysActivity/Domain/Domain.csproj"
               }
             }
           }

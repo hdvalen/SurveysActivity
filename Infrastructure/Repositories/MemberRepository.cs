@@ -3,18 +3,18 @@ using Domain.entities;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Repositories; 
-public class MemberRepository : GenericRepository<Member>, IMemberRepository { 
+public class MemberRepository : GenericRepository<UserMember>, IMemberRepository { 
     private readonly SurveyContext _context; 
     public MemberRepository(SurveyContext context) : base(context) {}
 
-    public async Task<Member> GetByRefreshTokenAsync(string refreshToken)
+    public async Task<UserMember> GetByRefreshTokenAsync(string refreshToken)
     {
         return await _context.Members
             .Include(u => u.RefreshTokens)
             .FirstOrDefaultAsync(u => u.RefreshTokens.Any(rt => rt.Token == refreshToken));
     }
 
-    public async Task<Member> GetByUsernameAsync(string username)
+    public async Task<UserMember> GetByUsernameAsync(string username)
         {
             return await _context.Members
                 .Include(u => u.MemberRols)
